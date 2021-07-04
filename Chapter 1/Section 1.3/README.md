@@ -19,7 +19,7 @@ std::cout << /* "*/" /* "/*" */;
 <br/>
 <br/>
 
-All of them are legal, except the third one: `std::cout << /* "*/" */;`.
+All of them are legal, except for the third one: `std::cout << /* "*/" */;`.
 
 The first two statements represent, indeed, the syntax to form comments. However, they are enclosed within double quotes,
 which nullifies their action, effectively being interpreted as string literals to be printed by `cout`. The error lies in the
