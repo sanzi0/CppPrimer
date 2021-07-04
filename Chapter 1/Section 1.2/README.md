@@ -11,7 +11,8 @@ the product instead.
 We wrote the output in one large statement. Rewrite the program to use a separate statement to print each operand.
 
 ### [Exercise 1.6]()
-Explain whether the following program fragment is legal.
+Explain whether the following program fragment is legal. If the program is legal, what does it do? If the program is not legal, why
+not? How would you fix it?
 
 ```
 std::cout << "The sum of " << v1;
