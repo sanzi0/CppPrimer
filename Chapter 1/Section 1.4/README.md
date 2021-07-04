@@ -29,8 +29,6 @@ for (int i = -100; i <= 100; ++i)
 Prints the sum of values from -100 to 100 inclusive. Sum equals 0.
 ### [Exercise 1.13](/Chapter%201/Section%201.4/ex1.13-a.cpp)
 #### Rewrite the exercises from § [1.4.1](/Chapter%201/Section%201.4#exercises-section-141) (p. 13) using for loops.
-<br/>
-
 ###### [Sum](/Chapter%201/Section%201.4/ex1.13-a.cpp) 
 ###### [Decrement]((/Chapter%201/Section%201.4/ex1.13-b.cpp))
 ###### [Range]((/Chapter%201/Section%201.4/ex1.13-c.cpp))
