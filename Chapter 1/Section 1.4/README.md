@@ -45,6 +45,11 @@ With my current knowledge, I cannot see any differences between the two. `while 
 <br/>
 <br/>
 
+![ex1.15](/assets/ch1/ex1.15.png)
+Tip: you can right-click your project -> properties -> C/C++ -> set Disable Language Extensions to **Yes (/Za)**. While you're at it,
+set C++ Language Standard to **ISO C++17 Standard (/std:c++17)**. When a tutorial tries to teach you new C++17-implemented stuff, you'll be
+good to go. And disabling language extensions helps us learn by adhering strictly to [C++ rules](https://www.learncpp.com/cpp-tutorial/configuring-your-compiler-compiler-extensions/) - or so I'm told. These guys also recommend you to change "Treat All Warnings As Errors" to **Yes (/WX)**, but I found this to be
+slightly inconvenient when trying to jot down quick and dirty code for places like [Project Euler](https://projecteuler.net/about).
 ## Exercises Section 1.4.3
 ### [Exercise 1.16](url)
 #### Write your own version of a program that prints the sum of a set of integers read from cin.
