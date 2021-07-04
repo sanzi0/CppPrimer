@@ -3,11 +3,7 @@
 ### [Exercise 1.7]()
 Compile a program that has incorrectly nested comments.
 
-[Docs](https://docs.microsoft.com/en-us/cpp/build/reference/cl-filename-syntax?view=msvc-160). 
->The filename extension determines how files are processed. C and C++ files, which have the extension .c, .cxx, or .cpp, are compiled. Other files, including .obj files, 
->libraries (.lib), and module-definition (.def) files, are passed to the linker without being processed.
-
-![ex1.7](/assets/ch1/ex1.1.png)
+![ex1.7](/assets/ch1/ex1.7.png)
 
 ### [Exercise 1.8]() 
 Indicate which, if any, of the following output statements are legal:
