@@ -31,7 +31,7 @@ Prints the sum of values from -100 to 100 inclusive. Sum equals 0.
 #### Rewrite the exercises from § [1.4.1](/Chapter%201/Section%201.4#exercises-section-141) (p. 13) using for loops.
 ###### [Sum](/Chapter%201/Section%201.4/ex1.13-a.cpp), [Decrement](/Chapter%201/Section%201.4/ex1.13-b.cpp), [Range](/Chapter%201/Section%201.4/ex1.13-c.cpp)
 
-### [Exercise 1.14](url)
+### Exercise 1.14
 #### Compare and contrast the loops that used a for with those using a while. Are there advantages or disadvantages to using either form?
 <br/>
 <br/>
@@ -39,7 +39,7 @@ Prints the sum of values from -100 to 100 inclusive. Sum equals 0.
 With my current knowledge, I cannot see any differences between the two. `while (true)` is an infinite loop, but also is `for (; ;)`.
 `for` allows a creation of a variable of limited scope, while `while` can only test a condition. Maybe the difference lies in the sequence of execution - perhaps you want an increment (or expression) to be solved/evaluated in a certain order. `for` loops always test the condition, execute the block and then increment the value. `while` however, can test the condition, increment a value first and then execute the block. And within this block you can do all sorts of different things. 
 
-### [Exercise 1.15](url)
+### [Exercise 1.15](/Chapter%201/Section%201.4/ex1.15.cpp)
 #### Write programs that contain the common errors discussed in the box on page 16. Familiarize yourself with the messages the compiler generates.
 <br/>
 <br/>
@@ -49,14 +49,15 @@ Tip: you can right-click your project -> properties -> C/C++ -> set Disable Lang
 set C++ Language Standard to **ISO C++17 Standard (/std:c++17)**. When a tutorial tries to teach you new C++17-implemented stuff, you'll be
 good to go. And disabling language extensions helps us learn by adhering strictly to [C++ rules](https://www.learncpp.com/cpp-tutorial/configuring-your-compiler-compiler-extensions/) - or so I'm told. These guys also recommend you to change "Treat All Warnings As Errors" to **Yes (/WX)**, but I found this to be
 slightly inconvenient when trying to jot down quick and dirty code for places like [Project Euler](https://projecteuler.net/about).
+
 ## Exercises Section 1.4.3
-### [Exercise 1.16](url)
+### [Exercise 1.16](/Chapter%201/Section%201.4/ex1.16.cpp)
 #### Write your own version of a program that prints the sum of a set of integers read from cin.
 <br/>
 <br/>
 
 ## Exercises Section 1.4.4
-### [Exercise 1.17](url)
+### [Exercise 1.17](/Chapter%201/Section%201.4/ex1.17.cpp)
 #### What happens in the program presented in this section if the input values are all equal? What if there are no duplicated values?
 ```
 #include <iostream>
