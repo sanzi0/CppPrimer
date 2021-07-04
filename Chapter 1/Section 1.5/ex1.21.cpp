@@ -7,6 +7,3 @@ int main() {
 	std::cout << item1 + item2 << std::endl;
 	return 0;
 }
-
-
-
