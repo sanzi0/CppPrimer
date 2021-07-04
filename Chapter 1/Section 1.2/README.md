@@ -1,13 +1,13 @@
 # Section 1.2
 ## Exercises Section 1.2
-### [Exercise 1.3](https://github.com/sanzi0/CppPrimer/blob/main/Chapter%201/Section%201.2/ex1.3.cpp)
+### [Exercise 1.3](/Chapter%201/Section%201.2/ex1.3.cpp)
 Write a program to print Hello, World on the standard output.
 
-### [Exercise 1.4](https://github.com/sanzi0/CppPrimer/blob/main/Chapter%201/Section%201.2/ex1.4.cpp)
+### [Exercise 1.4](/Chapter%201/Section%201.2/ex1.4.cpp)
 Our program used the addition operator, +, to add two numbers. Write a program that uses the multiplication operator, `*`, to print
 the product instead.
 
-### [Exercise 1.5](https://github.com/sanzi0/CppPrimer/blob/main/Chapter%201/Section%201.2/ex1.5.cpp)
+### [Exercise 1.5](/Chapter%201/Section%201.2/ex1.5.cpp)
 We wrote the output in one large statement. Rewrite the program to use a separate statement to print each operand.
 
 ### Exercise 1.6
