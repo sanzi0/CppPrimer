@@ -26,7 +26,7 @@ We mean that the statement ends, so program continues execution on the next stat
 \
 `<< " and " << v2;`\
 \
-Which cannot compile because the first output operator of this expression lacks the left-hand operand (which is std::cout as far as we're concerned). 
+Which cannot compile because the first output operator (`<<`) of this expression lacks the left-hand operand (which is std::cout as far as we're concerned). 
 It was supposed to be there because the very first statement of the program contains it:\
 \
 `std::cout << "The sum of " << v1;`\
@@ -44,5 +44,5 @@ std::cout doesn't survive to print out the next items on our program:\
 \
 `<< " and " << v2;`\
 \
-As stated, the first output operator (<<) ended up with no left-hand operand. It's a syntax error.
-Correction: delete semicolons or type std::cout before every <<.
+As stated, the first output operator ended up with no left-hand operand. It's a syntax error.
+Correction: delete semicolons or type std::cout before every `<<`.
