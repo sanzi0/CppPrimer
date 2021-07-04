@@ -26,7 +26,7 @@ for (int i = -100; i <= 100; ++i)
 <br/>
 <br/>
 
-Prints the sum of values from -100 to 100 inclusive. 0.
+Prints the sum of values from -100 to 100 inclusive. Sum equals 0.
 ### [Exercise 1.13]()
 #### Rewrite the exercises from § [1.4.1](/Chapter%201/Section%201.4#exercises-section-141) (p. 13) using for loops.
 <br/>
@@ -75,7 +75,7 @@ int main()
 		} // while loop ends here
 		// remember to print the count for the last value in the file
 		std::cout << currVal << " occurs "
-				  << cnt << " times" << std::endl;
+		          << cnt << " times" << std::endl;
 	} // outermost if statement ends here
 	return 0;
 }
@@ -83,15 +83,9 @@ int main()
 <br/>
 <br/>
 
-If the input values are all equal, the program doesn't output anything.
-Only the second if statement will be executed, therefore eternally incrementing
-cnt and never printing it to screen. The only way to see how many times these numbers
-occurred is to signal EoF to std::cin through CTRL+Z (Windows). The read doesn't succeed, therefore
-std::cin isn't returned, the condition evaluates to false and the last statement of the first if block
-is executed: we see the value of cnt.
-
-If there are no duplicated values, the program will output that each number
-occurred once, as only the else part of the second if statement would be executed,
-eternally getting new input, remembering it and printing the last one.
-
+If the input values are all equal, the program doesn't output anything. The program will prompt the user to enter a first number, store it in
+`currVal`, and a second one, storing it in `val`. Then, only the second if statement will be executed, eternally incrementing `cnt`. The only way 
+to see how many times these numbers occurred (and effectively end the `while` loop) is to signal end-of-file to `std::cin` through CTRL+Z (Windows). 
+The read doesn't succeed, therefore `std::cin` isn't returned, the condition evaluates to false and the last statement of the first if block is 
+executed: we see the value of `currVal`, which is whatever first value we provided, and also `cnt`, which represents how many equal numbers we typed in.
 
