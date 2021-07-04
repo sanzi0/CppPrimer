@@ -19,18 +19,30 @@ std::cout << "The sum of " << v1;
           << " is " << v1 + v2 << std::endl;
 ```
 Illegal. When we include the semicolon on the first statement:\
+\
 `std::cout << "The sum of " << v1;`\
+\
 We mean that the statement ends, so program continues execution on the next statement:\
+\
 `<< " and " << v2;`\
+\
 Which cannot compile because the first output operator of this expression lacks the left-hand operand (which is std::cout as far as we're concerned). 
 It was supposed to be there because the very first statement of the program contains it:\
+\
 `std::cout << "The sum of " << v1;`\
+\
 And when the program starts, it reads this first:\
+\
 `std::cout << "The sum of "`\
+\
 Which prints the message to screen and evaluates to std::cout. Execution continues:\
+\
 `std::cout << v1;`\
+\
 This prints the value of v1 to screen and that's it. There's a semicolon, which officially ends the statement. 
 std::cout doesn't survive to print out the next items on our program:\
+\
 `<< " and " << v2;`\
+\
 As stated, the first output operator (<<) ended up with no left-hand operand. It's a syntax error.
 Correction: delete semicolons or type std::cout before every <<.
