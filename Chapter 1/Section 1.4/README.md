@@ -68,7 +68,7 @@ int main()
 				++cnt; // add 1 to cnt
 			else { // otherwise, print the count for the previous value
 				std::cout << currVal << " occurs "
-						  << cnt << " times" << std::endl;
+				          << cnt << " times" << std::endl;
 				currVal = val; // remember the new value
 				cnt = 1; // reset the counter
 			}
@@ -86,6 +86,6 @@ int main()
 If the input values are all equal, the program doesn't output anything. The program will prompt the user to enter a first number, store it in
 `currVal`, and a second one, storing it in `val`. Then, only the second if statement will be executed, eternally incrementing `cnt`. The only way 
 to see how many times these numbers occurred (and effectively end the `while` loop) is to signal end-of-file to `std::cin` through CTRL+Z (Windows). 
-The read doesn't succeed, therefore `std::cin` isn't returned, the condition evaluates to false and the last statement of the first if block is 
-executed: we see the value of `currVal`, which is whatever first value we provided, and also `cnt`, which represents how many equal numbers we typed in.
-
+The read doesn't succeed, therefore `std::cin` isn't returned, the condition evaluates to false and the last statement of the first `if` block is 
+executed: we see the value of `currVal`, which represents our first input, and also `cnt`, which is the counter for how many times these equal values
+appeared.
