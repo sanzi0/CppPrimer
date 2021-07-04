@@ -21,7 +21,7 @@
 <br/>
 <br/>
 
-### [Exercise 1.24](/Chapter%201/Section%201.5/ex1.24-a.cpp)
+### Exercise 1.24
 #### Test the previous program by giving multiple transactions representing multiple ISBNs. The records for each ISBN should be grouped together.
 <br/>
 <br/>
