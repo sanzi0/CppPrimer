@@ -10,7 +10,7 @@ the product instead.
 ### [Exercise 1.5](https://github.com/sanzi0/CppPrimer/blob/main/Chapter%201/Section%201.2/ex1.5.cpp)
 We wrote the output in one large statement. Rewrite the program to use a separate statement to print each operand.
 
-### [Exercise 1.6]
+### Exercise 1.6
 Explain whether the following program fragment is legal. If the program is legal, what does it do? If the program is not legal, why
 not? How would you fix it?
 
