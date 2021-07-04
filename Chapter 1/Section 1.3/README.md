@@ -19,12 +19,15 @@ std::cout << /* "*/" /* "/*" */;
 <br/>
 <br/>
 
+![ex1.8](/assets/ch1/ex1.8.png)
+
 All of them are legal, except for the third one: `std::cout << /* "*/" */;`.
 
 The first two statements represent, indeed, the syntax to form comments. However, they are enclosed within double quotes,
 which nullifies their action, effectively being interpreted as string literals to be printed by `cout`. The error lies in the
 third statement, where the comment delimiters estabilish a comment solely containing the first double quotes, leaving the second ones unaffected.
 Therefore, what is left as source code is this: `" */;`. It looks like a string literal, but the compiler complains we are missing the closing quotes. 
-We need to append them to this code so that `*/` is correctly considered as a string literal and gets printed. 
-And finally, the fourth statement comments out some quotes, but at the center, `/*` survives and will
+We need to append them to this code so that `*/` is correctly considered as a string literal and gets printed. This is the quickest, most effective way to fix it,
+with as little change as possible. We could do all sorts of things to correct this mess, but simply appending a `"` before the `;` on the third statement resolves the problem completely. 
+And finally, the fourth statement comments out some quotes, but at the center, `"/*"` survives and will
 be printed out normally.
