@@ -37,7 +37,7 @@ Prints the sum of values from -100 to 100 inclusive. Sum equals 0.
 <br/>
 
 With my current knowledge, I cannot see any differences between the two. `while (true)` is an infinite loop, but also is `for (; ;)`.
-`for` allows for a creation of a variable of limited scope, but `while` can only test a condition. Maybe the difference lies in the sequence of execution - perhaps you want an increment (or expression) to be solved/evaluated in a certain order. `for` loops always test the condition, execute the block and then increment the value. `while` however, can test the condition, increment a value first and then execute the block. And within this block you can do all sorts of different things. 
+`for` allows a creation of a variable of limited scope, while `while` can only test a condition. Maybe the difference lies in the sequence of execution - perhaps you want an increment (or expression) to be solved/evaluated in a certain order. `for` loops always test the condition, execute the block and then increment the value. `while` however, can test the condition, increment a value first and then execute the block. And within this block you can do all sorts of different things. 
 
 ### [Exercise 1.15](url)
 #### Write programs that contain the common errors discussed in the box on page 16. Familiarize yourself with the messages the compiler generates.
