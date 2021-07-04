@@ -95,16 +95,16 @@ The read doesn't succeed, therefore `std::cin` isn't returned, the condition eva
 executed: we see the value of `currVal`, which represents our first input, and also `cnt`, which is the counter for how many times these equal values
 appeared.
 
-### [Exercise 1.18](/Chapter%201/Section%201.4/ex1.18.cpp)
+### Exercise 1.18
 #### Compile and run the program from this section giving it only equal values as input. Run it again giving it values in which no number is repeated.
 <br/>
 <br/>
 
+_Only equal numbers_
 ![ex1.18-a](/assets/ch1/ex1.18-a.png)
-Only equal numbers
 
+_Only different numbers_
 ![ex1.18-b](/assets/ch1/ex1.18-b.png)
-Only different numbers
 
 ### [Exercise 1.19](/Chapter%201/Section%201.4/ex1.19.cpp)
 #### Revise the program you wrote for the exercises in § [1.4.1](/Chapter%201/Section%201.4#exercises-section-141) (p. 13) that printed a range of numbers so that it handles input in which the first number is smaller than the second.
