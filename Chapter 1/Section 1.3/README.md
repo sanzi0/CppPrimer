@@ -1,13 +1,13 @@
 # Section 1.3
 ## Exercises Section 1.3
-### [Exercise 1.7]()
+### [Exercise 1.7]((/Chapter%201/Section%201.3/ex1.7.cpp))
 #### Compile a program that has incorrectly nested comments.
 <br/>
 <br/>
 
 ![ex1.7](/assets/ch1/ex1.7.png)
 
-### [Exercise 1.8]() 
+### [Exercise 1.8]((/Chapter%201/Section%201.3/ex1.8.cpp)) 
 #### Indicate which, if any, of the following output statements are legal:
 ```
 std::cout << "/*";
