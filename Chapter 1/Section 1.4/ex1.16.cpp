@@ -10,9 +10,3 @@ int main() {
 			std::cout << "The result of the sum is: " << sum << '\n';
 		}
 }
-
-
-
-
-
-
