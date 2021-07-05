@@ -58,7 +58,7 @@ int main()
 		if (timer >= 3)
 		{
 			std::cout << "Are you done? [y/n]: ";
-			std::cin >> prompt; // if user inputs y loop ends here
+			std::cin >> prompt; // if user types in 'y', program ends. very nice!
 			timer = 0;
 		}
 	}
