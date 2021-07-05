@@ -3,8 +3,9 @@
 int main()
 {
 	// this one has isbn initialized to the string
-	// "control" so the whole logic works... not pretty.
-	// too bad!
+	// "control" so we can detect if it's empty or not.
+	// doesn't look too good. will have to do for now
+	// we can come back later and fix this
 	Sales_data sales1, sales2;
 	sales1.isbn = "control";
 	sales2.isbn = "control";
@@ -40,10 +41,11 @@ int main()
 		}
 		++cnt;
 		++timer;
-		if (timer >= 3)
+		if (timer >= 4)
 		{
 			std::cout << "Are you done? [y/n]: ";
 			std::cin >> prompt;
+			timer = 0;
 		}
 	}
 }
