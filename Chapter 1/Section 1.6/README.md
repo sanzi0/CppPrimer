@@ -5,5 +5,5 @@
 <br/>
 <br/>
 
-The [Sales_item.h](assets/ch1/Sales_item.h) header file can be found in the assets folder. If I'm not mistaken, it is not possible to download individual files from GitHub.
+The [Sales_item.h](/assets/ch1/Sales_item.h) header file can be found in the assets folder. If I'm not mistaken, it is not possible to download individual files from GitHub.
 A possible workaround is downloading the whole repository, fetching whatever you need and deleting the rest. 
