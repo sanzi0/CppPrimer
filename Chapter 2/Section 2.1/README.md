@@ -120,7 +120,7 @@ Illegal. If the floating point literal does not have an exponent, the decimal po
 ##### (d) 3.14L
 This evaluates to 3.14, it's a floating point literal of type `long double`. <br/>
 
-### [Exercise 2.8](url)
+### [Exercise 2.8](/Chapter%202/Section%202.1/ex2.8.cpp)
 #### Using escape sequences, write a program to print `2M` followed by a newline. Modify the program to print `2`, then a tab, then an `M`, followed by a newline.
 <br/>
 <br/>
