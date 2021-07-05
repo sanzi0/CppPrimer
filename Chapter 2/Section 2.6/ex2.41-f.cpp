@@ -8,8 +8,8 @@ int main()
 		double revenue = 0.0;
 	};
 
-	Sales_data sales1, sales2; // we define two Sales_data objects					 
-	double price = 0;		   // so we can compare ISBNs
+	Sales_data sales1, sales2; // we define two Sales_data objects so we can compare ISBNs					 
+	double price = 0;
 	char prompt = 0;
 	unsigned int totalSold = 0;
 	double totalRevenue = 0;
