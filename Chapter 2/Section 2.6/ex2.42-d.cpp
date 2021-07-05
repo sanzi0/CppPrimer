@@ -6,6 +6,8 @@ int main()
 	// "control" so the whole logic works... not pretty.
 	// too bad!
 	Sales_data sales1, sales2;
+	sales1.isbn = "control";
+	sales2.isbn = "control";
 	double price = 0;
 	unsigned int totalSold = 0;
 	double totalRevenue = 0;
@@ -44,5 +46,4 @@ int main()
 			std::cin >> prompt;
 		}
 	}
-
 }
