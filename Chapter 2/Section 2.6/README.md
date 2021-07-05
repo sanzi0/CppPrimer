@@ -43,4 +43,5 @@ Note: `Sales_data.h` is our own version of the original, more elaborated `Sales_
 
 ## Exercises Section 2.6.3
 ### Exercise 2.42
-#### Write your own version of the `Sales_item.h` header and use it to rewrite the exercise from § 2.6.2 (p. 76).
+#### Write your own version of the `Sales_item.h` header and use it to rewrite the exercise from § [2.6.2](/Chapter%202/Section%202.6/README.md#exercises-section-262) (p. 76).
+
