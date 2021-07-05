@@ -8,8 +8,8 @@ int main()
 		double revenue = 0.0;
 	};
 
-// a "set" of transactions. let's assume three
-// needs to have same ISBN
+	// a "set" of transactions. let's assume three
+	// needs to have same ISBN
 	Sales_data sales1, sales2, sales3;
 	double price = 0;
 
