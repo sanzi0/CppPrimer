@@ -44,7 +44,7 @@ std::cout << i << " " << ri << std::endl;
 `10 10`. Changing the value of the reference is the same as changing the value of the object to which it is bound.
 
 ## Exercises Section 2.3.2
-### [Exercise 2.18](url)
+### [Exercise 2.18](/Chapter%202/Section%202.3/ex2.18.cpp)
 #### Write code to change the value of a pointer. Write code to change the value to which the pointer points.
 <br/>
 <br/>
