@@ -37,7 +37,7 @@ Note: The book wants you to write the `Sales_data` class within the `main` funct
 <br/>
 <br/>
 
-[Final program](/Chapter%202/Section%202.6/ex2.41-f)
+[Complete bookstore program](/Chapter%202/Section%202.6/ex2.41-f)
 <br/>
 <br/>
 
@@ -55,6 +55,6 @@ Note: The book wants you to write the `Sales_data` class within the `main` funct
 <br/>
 <br/>
 
-[Final program](/Chapter%202/Section%202.6/ex2.42-f)
+[Complete bookstore program](/Chapter%202/Section%202.6/ex2.42-f)
 <br/>
 <br/>
