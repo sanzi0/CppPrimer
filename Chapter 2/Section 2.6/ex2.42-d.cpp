@@ -2,10 +2,6 @@
 #include "Sales_data.h"
 int main()
 {
-	// this one has isbn initialized to the string
-	// "control" so we can detect if it's empty or not.
-	// doesn't look too good. will have to do for now
-	// we can come back later and fix this
 	Sales_data sales1, sales2;
 	sales1.isbn = "control";
 	sales2.isbn = "control";
