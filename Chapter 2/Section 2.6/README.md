@@ -1,9 +1,7 @@
-# Section 2.5
-## Exercises Section 2.5.2
-### Exercise 2.33
-#### Using the variable definitions from this section, determine what happens in each of these assignments:
-```c++
-// variable definitions
+# Section 2.6
+## Exercises Section 2.6.1
+### Exercise 2.39
+#### Compile the following program to see what happens when you forget the semicolon after a class definition. Remember the message for future reference.
 int i = 0;
 int &r = i;
 auto a = r; // int
