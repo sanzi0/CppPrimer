@@ -143,13 +143,13 @@ decltype (b) = a; // b deduced to const int
 const int a = 5;
 auto b = a; // b deduced to int
 ```
-`b` is of type `int`, because `auto` ignores top-level `consts`. Here's an example where `auto` and `decltype` deduce the same type:
-```c++
-int c = 6;
-auto d = c;
-```
+`b` is of type `int`, because `auto` ignores top-level `consts`. Here's an example where `decltype` and `auto` deduce the same type:
 ```c++
 int c = 7;
-decltype (d) = c
+decltype (d) = c // deduced to int
 ```
-`decltype` evaluates the result of an expression. It also accepts functions? There's more to it than meets the eye. For now, this simple answer will do.
+```c++
+int c = 6;
+auto d = c; // deduced to int
+```
+`decltype` can deduce types by evaluating an expression. It also accepts functions? There's more to it than meets the eye. For now, this simple answer will do.
