@@ -47,5 +47,4 @@ int main()
 			std::cin >> prompt;
 		}
 	}
-
 }
