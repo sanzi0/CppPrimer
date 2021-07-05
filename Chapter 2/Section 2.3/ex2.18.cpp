@@ -14,7 +14,7 @@ int main()
 	pt = &b;
 
 	// access object through dereference
-	// assigns 256 to b
+	// assign 256 to b
 	*pt = 256;
 
 	return 0;
