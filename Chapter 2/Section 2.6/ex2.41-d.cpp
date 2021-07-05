@@ -2,8 +2,13 @@
 
 int main()
 {
+	// sales2.isbn is the empty string, therefore, it's always going to be different
+	// than whatever the user provides in the input phase of the program. to solve this,
+	// i just initialized isbn to the string "control" so we can actually test for it in the conditions.
+	// doesn't look too good. will have to do for now
+	// we can come back later and fix this
 	struct Sales_data {
-		std::string isbn = "control"; // very inelegant. too bad!
+		std::string isbn = "control";
 		unsigned units_sold = 0;
 		double revenue = 0.0;
 	};
