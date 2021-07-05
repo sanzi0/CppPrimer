@@ -1,129 +1,109 @@
 # Section 2.2
 ## Exercises Section 2.2.1
 ### Exercise 2.9
-#### Explain the following definitions. For those that are illegal,
-explain what’s wrong and how to correct it.
-(a) std::cin >> int input_value;
-(b) int i = { 3.14 };
-(c) double salary = wage = 9999.99;
-(d) int i = 3.14;
+#### Explain the following definitions. For those that are illegal, explain what’s wrong and how to correct it.
+##### (a) std::cin >> int input_value;
+Compiler shows error `E0254: type name is not allowed`. This is illegal, the variable needs to first be declared and then it can be used with `std::cin`. <br/>
 
-An `int` is at least as large as a `short`, a `long` at least as large as an `int` and
-`long long` is at least as large as `long`. While this is the truth, as a beginner it's also worth stating the obvious:
-`short` is the smallest type. `long long` is the largest. Use accordingly. If you want to store the world population 7,800,000,000 in a `short`, that's no good,
-because `signed short` only spans values from -32768 to 32767 inclusive. Using `long long` would solve our problem. Each of these data types have different sizes, 
-but all of them are used to define integers. A signed type represents negative and positive values (including zero), 
-but an unsigned type can only hold positive values (greater than or equal to zero). A double has more precision with its computations (yields 16 significant figures), 
-a float yields less (7 sig figs), and is smaller in size as well.
+##### (b) int i = { 3.14 };
+Type conversion does not happen because of the use of list initialization. Change type to `double` or do copy initialization. <br/>
 
-### Exercise 2.2
-#### To calculate a mortgage payment, what types would you use for the rate, principal, and payment? Explain why you selected each type.
-<br/>
-<br/>
+##### (c) double salary = wage = 9999.99;
+Illegal. It's not possible to chain initializations like this, compiler complains. A possible workaround, if typing everything in the same line is a priority:
+```c++ 
+double salary = 9999.99; double wage = salary;
+```
 
-Mortgage principal: `int` <br/> 
-Because it's a round number, but not large enough for `long`. <br/>
-<br/>
-Rate: `float` <br/>
-Interest rates are usually decimals. <br/>
-<br/>
-Payment: `double` <br/>
-The monthly payment will end up not being round as well, so we'll need to use floating point types.
+##### (d) int i = 3.14;
+Legal, but number gets truncated. Only the value before the decimal point gets stored. It's possible to change `int` to `float`, `double` or `long double`, types that
+can safely hold that value. <br/>
 
-## Exercises Section 2.1.2
-### Exercise 2.3
-#### What output will the following code produce?
+### Exercise 2.10
+#### What are the initial values, if any, of each of the following variables?
 ```c++
-  unsigned u = 10, u2 = 42;
-  std::cout << u2 - u << std::endl;
-  std::cout << u - u2 << std::endl;
-  
-  int i = 10, i2 = 42;
-  std::cout << i2 - i << std::endl;
-  std::cout << i - i2 << std::endl;
-  
-  std::cout << i - u << std::endl;
-  std::cout << u - i << std::endl;
+std::string global_str;
+int global_int;
+int main()
+{
+	int local_int;
+	std::string local_str;
+}
 ```
 <br/>
 <br/>
 
-![ex2.3](/assets/ch2/ex2.3.png)
+`global_str` is initialized to the empty string, `global_int` is a global variable of value `0`, `local_int` is a local variable defined in the body of `main`. This means
+its value is undefined. `local_str` is initialized to the empty string.
 
-### [Exercise 2.4](/Chapter%202/Section%202.1/ex2.4.cpp) 
-#### Write a program to check whether your predictions were correct. If not, study this section until you understand what the problem is.
-<br/>
-<br/>
+## Exercises Section 2.2.2
+### Exercise 2.11
+#### Explain whether each of the following is a declaration or a definition:
+##### (a) extern int ix = 1024;
+Initializer provided. Extern overridden. Definition + declaration. <br/>
 
-## Exercises Section 2.1.3
-### Exercise 2.5
-#### Determine the type of each of the following literals. Explain the differences among the literals in each of the four examples:
-##### (a) 'a', L'a', "a", L"a"
-`'a'`: Character literal of type `char`. Is guaranteed to represent one (and only one) narrow character from the machine's basic character set. Size varies. <br/>
-`L'a'`: Character literal of type `wchar_t`. Is guaranteed to represent one (and only one) wide character from the machine's extended character set. Size varies. <br/>
-`"a"`: String literal of type array of `const char`. Can represent a set of narrow characters. Size varies. <br/>
-`L"a"`: String literal of type array of `const wchar_t`. Can represent a set of wide characters. Size varies. <br/>
+##### (b) int iy;
+No initializer. Object was given a name, type and memory space. Definition + declaration. <br/>
 
-Note: The data sizes proposed in the book seem outdated. [Here's](https://en.cppreference.com/w/cpp/language/types) the recent stuff. 
-Microsoft also has [nice docs](https://docs.microsoft.com/en-us/cpp/cpp/fundamental-types-cpp?view=msvc-160).
+##### (c) extern int iz;
+Usage of the extern keyword. Declaration. <br/>
 
-##### (b) 10, 10u, 10L, 10uL, 012, 0xC
-`10`: integer literal type `int` <br/>
-`10u`: integer literal type `unsigned int` <br/>
-`10L`: integer literal type `long` <br/>
-`10uL`: integer literal type `unsigned long` <br/>
-`012`: integer literal in octal form (= 10) type `int` <br/>
-`0xC`: integer literal in hexadecimal form (= 12) type `int` <br/>
+## Exercises Section 2.2.3
+### Exercise 2.12
+#### Which, if any, of the following names are invalid?
+##### (a) int double = 3.14;
+Invalid. `double` is a reserved keyword. <br/>
 
-##### (c) 3.14, 3.14f, 3.14L
-`3.14`: floating point literal type `double` <br/>
-`3.14f`: floating point literal type `float` <br/>
-`3.14L`: floating point literal type `long double` <br/>
+##### (b) int \_;
+Valid. Names can begin with the underscore character. <br/>
 
-All of these represent the same number: `float` has lower precision, `long double` has higher precision, and it's best to not mix them
-so as to not lose precision or even change the values drastically.
+##### (c) int catch-22;
+Invalid. Allowed composition of identifiers: letters, digits and the underscore character. <br/>
 
-##### (d) 10, 10u, 10., 10e-2
-`10`: integer literal type `int` <br/>
-`10u`: integer literal type `unsigned` <br/>
-`10.`: floating point literal type `double` <br/>
-`10e-2`: floating point literal type `double` (= 0.1) <br/>
-	
-The first three are all the number 10, the first one admitting negative values,
-the second one admitting only positive values including zero, and the third one being a 
-floating point number, which is somewhat analogous to decimal numbers. The last literal
-is followed by a negative exponent, and evaluates to 0.1.
+##### (d) int 1_or_2 = 1;
+Invalid. Names can't begin with a letter. <br/>
 
-### Exercise 2.6
-#### What, if any, are the differences between the following definitions:
+##### (e) double Double = 3.14;
+Valid. `double` is a reserved keyword, but the identifiers are case-sensitive. <br/>
+
+## Exercises Section 2.2.4
+### Exercise 2.13
+#### What is the value of j in the following program?
 ```c++
-int month = 9, day = 7;
-int month = 09, day = 07;
+int i = 42;
+int main()
+{
+	int i = 100;
+	int j = i;
+}
 ```
 <br/>
 <br/>
 
-To use a zero directly followed by some number means this representation is using the octal system. On the second line, `int month = 09` is in error, because
-the octal system only comprises the digits 0, 1, 2, 3, 4, 5, 6, 7. Nine in octal is 11. However, `day = 07` is correct octal notation and in decimal means 7.
+`j` gets assigned the value of `i`, which is 100, because a local variable with the same identifier has just been defined and is now in scope, 
+effectively  "hiding" the global `i`. To access it, one must provide the `::` scope operator with empty left-hand operand to indicate global scope.
 
-### Exercise 2.7
-#### What values do these literals represent? What type does each have?
-##### (a) "Who goes with F\145rgus?\012"
-It's a string literal, of type array of `const chars`. 
-`\145` is an escape sequence containing the ASCII code for `e` in octal system. 
-It can be used exactly like a character literal in C++, and will just output `e`. `\012`
-is the ASCII code for `\n` or newline. It's also in octal. <br/>
-
-##### (b) 3.14e1L
-This evaluates to 31.4, it's a floating point literal of type `long double`. <br/>
-
-##### (c) 1024f
-Illegal. If the floating point literal does not have an exponent, the decimal point is mandatory. <br/>
-
-##### (d) 3.14L
-This evaluates to 3.14, it's a floating point literal of type `long double`. <br/>
-
-### [Exercise 2.8](/Chapter%202/Section%202.1/ex2.8.cpp)
-#### Using escape sequences, write a program to print `2M` followed by a newline. Modify the program to print `2`, then a tab, then an `M`, followed by a newline.
+### Exercise 2.14
+#### Is the following program legal? If so, what values are printed?
+```c++
+int i = 100, sum = 0;
+for (int i = 0; i != 10; ++i)
+	sum += i;
+std::cout << i << " " << sum << std::endl;
+```
 <br/>
 <br/>
+
+It's legal. The first `i` gets defined as 100, but the `for` statement generates another `i` that's only usable inside its body. It runs the following iterations:
+```c++
+i = 0, sum = 0
+i = 1, sum = 1
+i = 2, sum = 3
+i = 3, sum = 6
+i = 4, sum = 10
+i = 5, sum = 15
+i = 6, sum = 21
+i = 7, sum = 28
+i = 8, sum = 36
+i = 9, sum = 45
+```
+The second `i` lifespan is spent merely as tool to increment the value of `sum`. In the end of the `for` loop, `sum` retains its value, but the second `i` is obliterated. The first `i` gets printed, along with the value of `sum`: `100 45`.
