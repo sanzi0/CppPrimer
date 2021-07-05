@@ -18,7 +18,7 @@
 ## Exercises Section 1.4.2
 ### Exercise 1.12
 #### What does the following for loop do? What is the final value of sum?
-```
+```c++
 int sum = 0;
 for (int i = -100; i <= 100; ++i)
   sum += i;
@@ -59,7 +59,7 @@ slightly inconvenient when trying to jot down quick and dirty code for places li
 ## Exercises Section 1.4.4
 ### [Exercise 1.17](/Chapter%201/Section%201.4/ex1.17.cpp)
 #### What happens in the program presented in this section if the input values are all equal? What if there are no duplicated values?
-```
+```c++
 #include <iostream>
 int main()
 {
