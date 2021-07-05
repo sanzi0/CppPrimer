@@ -24,9 +24,9 @@ int main()
 		if (sales1.isbn != sales2.isbn && sales2.isbn != "control")
 		{
 			std::cout << R"(|||||||| * * *  R E S U L T S  * * * ||||||||
-)" << sales2.isbn << " " << totalSold << " " << totalRevenue <<
-" " << totalRevenue / totalSold << '\n' << sales2.isbn <<
-" occurs " << cnt << " times." << std::endl;
+)" 			<< sales2.isbn << " " << totalSold << " " << totalRevenue <<
+			" " << totalRevenue / totalSold << '\n' << sales2.isbn <<
+			" occurs " << cnt << " times." << std::endl;
 			totalSold = 0; // empty sum containers
 			totalRevenue = 0;
 			cnt = 0; // reset counter
@@ -43,9 +43,9 @@ int main()
 		if (sales1.isbn != sales2.isbn)
 		{
 			std::cout << R"(|||||||| * * *  R E S U L T S  * * * ||||||||
-)" << sales1.isbn << " " << totalSold << " " << totalRevenue <<
-" " << totalRevenue / totalSold << '\n' << sales1.isbn <<
-" occurs " << cnt << " times." << std::endl;
+)" 			<< sales1.isbn << " " << totalSold << " " << totalRevenue <<
+			" " << totalRevenue / totalSold << '\n' << sales1.isbn <<
+			" occurs " << cnt << " times." << std::endl;
 			totalSold = 0;
 			totalRevenue = 0;
 			cnt = 0;
@@ -68,8 +68,8 @@ int main()
 	// prints last stored value
 	std::cout <<
 		R"(|||||||| * * *  R E S U L T S  * * * ||||||||
-)" << sales1.isbn << " " << totalSold << " " << totalRevenue << " " <<
-totalRevenue / totalSold << '\n' <<
-sales1.isbn << " occurs " << cnt << " times." << std::endl;
+)" 		<< sales1.isbn << " " << totalSold << " " << totalRevenue << " " <<
+		totalRevenue / totalSold << '\n' <<
+		sales1.isbn << " occurs " << cnt << " times." << std::endl;
 	return 0;
 }
