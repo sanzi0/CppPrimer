@@ -3,8 +3,10 @@
 
 int main()
 {
-	Sales_data sales1, sales2; // we define two Sales_data objects					 
-	double price = 0;		   // so we can compare ISBNs
+	Sales_data sales1, sales2; // we define two Sales_data objects so we can compare ISBNs	
+	sales1.isbn = "control";
+	sales2.isbn = "control";
+	double price = 0;		   
 	char prompt = 0;
 	unsigned int totalSold = 0;
 	double totalRevenue = 0;
@@ -19,9 +21,9 @@ int main()
 		if (sales1.isbn != sales2.isbn && sales2.isbn != "control")
 		{
 			std::cout << R"(|||||||| * * *  R E S U L T S  * * * ||||||||
-)" << sales2.isbn << " " << totalSold << " " << totalRevenue <<
-" " << totalRevenue / totalSold << '\n' << sales2.isbn <<
-" occurs " << cnt << " times." << std::endl;
+)" 			<< sales2.isbn << " " << totalSold << " " << totalRevenue <<
+			" " << totalRevenue / totalSold << '\n' << sales2.isbn <<
+			" occurs " << cnt << " times." << std::endl;
 			totalSold = 0; // empty sum containers
 			totalRevenue = 0;
 			cnt = 0; // reset counter
@@ -38,9 +40,9 @@ int main()
 		if (sales1.isbn != sales2.isbn)
 		{
 			std::cout << R"(|||||||| * * *  R E S U L T S  * * * ||||||||
-)" << sales1.isbn << " " << totalSold << " " << totalRevenue <<
-" " << totalRevenue / totalSold << '\n' << sales1.isbn <<
-" occurs " << cnt << " times." << std::endl;
+)" 			<< sales1.isbn << " " << totalSold << " " << totalRevenue <<
+			" " << totalRevenue / totalSold << '\n' << sales1.isbn <<
+			" occurs " << cnt << " times." << std::endl;
 			totalSold = 0;
 			totalRevenue = 0;
 			cnt = 0;
@@ -63,8 +65,8 @@ int main()
 	// prints last stored value
 	std::cout <<
 		R"(|||||||| * * *  R E S U L T S  * * * ||||||||
-)" << sales1.isbn << " " << totalSold << " " << totalRevenue << " " <<
-totalRevenue / totalSold << '\n' <<
-sales1.isbn << " occurs " << cnt << " times." << std::endl;
+)" 		<< sales1.isbn << " " << totalSold << " " << totalRevenue << " " <<
+		totalRevenue / totalSold << '\n' <<
+		sales1.isbn << " occurs " << cnt << " times." << std::endl;
 	return 0;
 }
