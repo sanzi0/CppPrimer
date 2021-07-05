@@ -18,7 +18,7 @@ int main()
 
 ### [Exercise 2.40](/Chapter%202/Section%202.6/Sales_data.h)
 #### Write your own version of the `Sales_data` class.
-Note: `Sales_data.h` is our own version of the original, more elaborated `Sales_item.h` provided by the authors.
+Note: The book wants you to write the `Sales_data` class within the `main` function of your program at this moment. They'll talk about actually creating your header files after the end of the next section of exercises. `Sales_data.h` will be our own version of the original, more elaborated `Sales_item.h` provided by the authors.
 <br/>
 <br/>
 
@@ -26,7 +26,7 @@ Note: `Sales_data.h` is our own version of the original, more elaborated `Sales_
 ### Exercise 2.41
 #### Use your `Sales_data` class to rewrite the exercises in § [1.5.1](/Chapter%201/Section%201.5#exercises-section-151) (p. 22), § [1.5.2](/Chapter%201/Section%201.5#exercises-section-152) (p. 24), and § [1.6](/Chapter%201/Section%201.6#exercises-section-16) (p. 25). For now, you should define your `Sales_data` class in the same file as your main function.
 
-##### [Set of transactions](/Chapter%202/Section%202.6/ex2.41-a), [ISBN sum 1](/Chapter%202/Section%202.6/ex2.41-b), [ISBN sum 2](/Chapter%202/Section%202.6/ex2.41-c), [counter](/Chapter%202/Section%202.6/ex2.41-c) <br/>
+##### [Set of transactions](/Chapter%202/Section%202.6/ex2.41-a), [ISBN sum 1](/Chapter%202/Section%202.6/ex2.41-b), [ISBN sum 2](/Chapter%202/Section%202.6/ex2.41-c), [counter](/Chapter%202/Section%202.6/ex2.41-d) <br/>
 ###### Test the previous program by giving multiple transactions representing multiple ISBNs. The records for each ISBN should be grouped together.
 ![ex2.41-e](/assets/ch2/ex2.41-e.png)
 <br/>
@@ -44,4 +44,17 @@ Note: `Sales_data.h` is our own version of the original, more elaborated `Sales_
 ## Exercises Section 2.6.3
 ### Exercise 2.42
 #### Write your own version of the `Sales_item.h` header and use it to rewrite the exercise from § [2.6.2](/Chapter%202/Section%202.6/README.md#exercises-section-262) (p. 76).
+##### [Set of transactions](/Chapter%202/Section%202.6/ex2.42-a), [ISBN sum 1](/Chapter%202/Section%202.6/ex2.42-b), [ISBN sum 2](/Chapter%202/Section%202.6/ex2.42-c), [counter](/Chapter%202/Section%202.6/ex2.42-d) <br/>
+###### Test the previous program by giving multiple transactions representing multiple ISBNs. The records for each ISBN should be grouped together.
+![ex2.41-e](/assets/ch2/ex2.41-e.png)
+<br/>
+<br/>
 
+###### Using the `Sales_item.h` (now `Sales_data.h` written by us) header from the Web site, compile and execute the bookstore program presented in this section.
+![ex2.41-e2](/assets/ch2/ex2.41-e2.png)
+<br/>
+<br/>
+
+[Final program](/Chapter%202/Section%202.6/ex2.42-f)
+<br/>
+<br/>
