@@ -133,12 +133,12 @@ Type deduced: `int&`. `d` is now a reference to `a`.
 <br/>
 <br/>
 
-`decltype` does not leave anything behind, it returns exactly the type of its definition, e.g.
+`decltype` does not leave anything behind, it returns exactly the type of its definition. In the following case, `decltype` deduces `b` to be of the type `const int`.
 ```c++ 
 const int a = 5;
 decltype (b) = a;
 ```
-In this case, `decltype` deduces `b` to be of the type `const int`. `auto`, however, behaves differently:
+`auto`, however, behaves differently:
 ```c++
 const int a = 5;
 auto b = a;
