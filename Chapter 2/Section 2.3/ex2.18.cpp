@@ -9,7 +9,7 @@ int main()
 	// to a
 	int *pt = &a;
 
-	// changes address stored in pt
+	// change address stored in pt
 	// it now points to b
 	pt = &b;
 
