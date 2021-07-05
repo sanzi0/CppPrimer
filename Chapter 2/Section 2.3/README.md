@@ -130,4 +130,4 @@ Void pointers can point to any type. Other pointers need to match the type of th
 
 ##### (c) `int* ip, ip2;`
 `ip` is an uninitialized pointer to an `int` and has undefined value, `ip2` is an uninitialized variable of type `int` and its value depends on 
-whether it's defined in a function block or globally.
+whether it's defined in a function block (undefined) or globally (0).
